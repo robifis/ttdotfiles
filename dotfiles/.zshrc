@@ -33,7 +33,10 @@ zinit light zdharma-continuum/fast-syntax-highlighting
 # End of Plugins
 
 # Alias
-alias ls="lsd -la"
+alias ls="eza --group-directories-first -la"
+alias z="zoxide"
 
 # OhMyPosh
 eval "$(oh-my-posh init zsh --config $(brew --prefix oh-my-posh)/themes/night-owl.omp.json)"
+source <(fzf --zsh)
+
